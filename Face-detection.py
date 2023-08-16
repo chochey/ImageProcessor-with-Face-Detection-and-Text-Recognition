@@ -49,7 +49,7 @@ for zip_file in zip_files:
             if zip_info.is_dir():
                 continue
 
-            print(f"Processing image file: {zip_info.filename}")
+            print(f"Processing image: {zip_info.filename}")
 
             image_data = zip_ref.read(zip_info.filename)
 
@@ -86,7 +86,7 @@ for zip_file in zip_files:
 # Process images outside zip files
 for image_file in os.listdir(input_dir):
     if image_file.lower().endswith((".png", ".jpg", ".jpeg")):
-        print(f"Processing image file: {image_file}")
+        print(f"Processing image: {image_file}")
 
         image_path = os.path.join(input_dir, image_file)
         with open(image_path, "rb") as img_file:

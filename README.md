@@ -31,5 +31,5 @@ pip install opencv-python numpy Pillow pytesseract
 
 - Put your .zip file or image into a folder called "input_data".
 - Open Face-detection.py and update the following variables:
-- wordToSearch with the word you are searching for in the images.
+  1.  wordToSearch with the word you are searching for in the images.
 - Run Face-detection.py script.
